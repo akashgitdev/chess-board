@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 3px solid black;
+            height: 800px;
+            width: 800px;
+            position: absolute;
+            left: 300px;
+        }
+        .main1>:nth-of-type(2n+1){
+            background-color: black;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .main1>:nth-of-type(2n){
+            background-color: rgb(245, 242, 242);
+            height: 100px;
+            width: 100px;
+        }
+        .main2>:nth-of-type(2n+1){
+            background-color: white;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .main2>:nth-of-type(2n){
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+        .main2{
+            position: relative;
+            left: 100px;
+            bottom: 800px;
+        }
+        .main3>:nth-of-type(2n+1){
+            background-color:black;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .main3>:nth-of-type(2n){
+            background-color: white;
+            height: 100px;
+            width: 100px;
+        }
+        .main3{
+            position: relative;
+            left: 200px;
+            bottom: 1600px;
+        }
+        .main4>:nth-of-type(2n+1){
+            background-color:white;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .main4>:nth-of-type(2n){
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+        .main4{
+            position: relative;
+            left: 300px;
+            bottom: 2400px;
+        }
+        .main5>:nth-of-type(2n+1){
+            background-color:black;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .main5>:nth-of-type(2n){
+            background-color: white;
+            height: 100px;
+            width: 100px;
+        }
+        .main5{
+            position: relative;
+            left: 400px;
+            bottom: 3200px;
+        }
+        .main6>:nth-of-type(2n+1){
+            background-color:white;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .main6>:nth-of-type(2n){
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+        .main6{
+            position: relative;
+            left: 500px;
+            bottom: 4000px;
+        }
+        .main7>:nth-of-type(2n+1){
+            background-color:black;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .main7>:nth-of-type(2n){
+            background-color: white;
+            height: 100px;
+            width: 100px;
+        }
+        .main7{
+            position: relative;
+            left: 600px;
+            bottom: 4800px;
+        }
+        .main8>:nth-of-type(2n+1){
+            background-color:white;
+            height: 100px;
+            width: 100px;
+           
+        }
+        .main8>:nth-of-type(2n){
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+        .main8{
+            position: relative;
+            left: 700px;
+            bottom: 5600px;
+        }
+        .a2,.c2,.e2,.g2{
+            font-size: 80px;
+            
+        }
+        
+        .a7,.c7,.e7,.c1,.g7,.f8,.d8,.f1,.g1,.e1,.b8,.b2,.d2,.f2,.h8,.a1,.h2{
+            font-size: 80px;
+            color: white;
+            
+        }
+        .b7,.d7,.f7,.b1,.d1,.c8,.h1,.e8,.f1,.g8,.h7,.a8{
+            font-size: 80px;
+            color:black;
+            
+            
+        }
+        .a1:hover,.d7:hover,.h2:hover,.c1:hover{
+            background-color: rgb(76, 155, 201);
+            font-size: 90px;
+        }
+        .a7:hover,.b1:hover{
+            background-color: rgb(217, 37, 127);
+            font-size: 90px;
+        }
+        .d1:hover,.c8:hover,.e7:hover,.h7:hover,.f1:hover{
+            background-color: red;
+            font-size: 90px;
+        }
+        .a8:hover,.e1:hover{
+            background-color: rgb(53, 234, 158);
+            font-size: 90px;
+        }
+        .g1:hover,.e8:hover,.g8:hover,.a2:hover{
+            background-color: rgb(43, 226, 223);
+            font-size: 90px;
+        }
+        .b7:hover,.h1:hover{
+            background-color: rgb(179, 140, 216);
+            font-size: 90px;
+        }
+        .b2:hover,.f7:hover,.g7:hover,.d2:hover{
+            background-color: blue;
+            font-size: 90px;
+        }
+        .c2:hover,.b8:hover{
+            background-color: rgb(254, 119, 56);
+            font-size: 90px;
+        }
+        .e2:hover,.f2:hover,.c7:hover,.d8:hover,.f8:hover,.h8:hover,.g2:hover{
+            background-color: yellow;
+            font-size: 90px;
+        }
+        .f2:hover,.c7:hover{
+            background-color: rgb(0, 255, 34);
+            font-size: 90px;
+        }
+     .tooltip{
+        visibility: hidden;
+        border: 1px solid rgb(192, 10, 10);
+        width:200px;
+        color: brown;
+        position: relative;
+        left:80px;
+        
+     }
+     .tool:hover .tooltip{
+        visibility: visible;
+        border-color: blueviolet;
+        color: blue;
+        border-radius: 10px;
+     }
+</style>
+</head>
+<body>
+    <div class="tool">
+        <!-- Username:
+        <input type="text">
+    <div class="tooltip">Enter User Name</div>
+</div> -->
+<div class="main">
+   <div class="main1">
+      <div class="a1">&#9820</div>
+      <div class="a2">&#9823</div>
+      <div class="a3"></div>
+      <div class="a4"></div>
+      <div class="a5"></div>
+      <div class="a6"></div>
+      <div class="a7">&#9817</div>
+      <div class="a8">&#9820</div>
+      </div>
+      <div class="main2">
+      <div class="b1">&#9822</div>
+      <div class="b2">&#9823</div>
+      <div class="b3"></div>
+      <div class="b4"></div>
+      <div class="b5"></div>
+      <div class="b6"></div>
+      <div class="b7">&#9817</div>
+      <div class="b8">&#9822</div>
+    </div>
+    <div class="main3">
+      <div class="c1">&#9821</div>
+      <div class="c2">&#9823</div>
+      <div class="c3"></div>
+      <div class="c4"></div>
+      <div class="c5"></div>
+      <div class="c6"></div>
+      <div class="c7">&#9817</div>
+      <div class="c8">&#9821</div>
+    </div>
+    <div class="main4">
+      <div class="d1">&#9813</div>
+      <div class="d2">&#9823</div>
+      <div class="d3"></div>
+      <div class="d4"></div>
+      <div class="d5"></div>
+      <div class="d6"></div>
+      <div class="d7">&#9817</div>
+      <div class="d8">	&#9818</div>
+    </div>
+    <div class="main5">
+      <div class="e1">&#9812</div>
+      <div class="e2">&#9823</div>
+      <div class="e3"></div>
+      <div class="e4"></div>
+      <div class="e5"></div>
+      <div class="e6"></div>
+      <div class="e7">&#9817</div>
+      <div class="e8">	&#9818</div>
+    </div>
+    <div class="main6">
+      
+      <div class="f1">&#9821</div>
+      <div class="f2">&#9823</div>
+      <div class="f3"></div>
+      <div class="f4"></div>
+      <div class="f5"></div>
+      <div class="f6"></div>
+      <div class="f7">&#9817</div>
+      <div class="f8">&#9821</div>
+    </div>
+    <div class="main7">
+      <div class="g1">&#9822</div>
+      <div class="g2">&#9823</div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="g6"></div>
+      <div class="g7">&#9817</div>
+      <div class="g8">&#9822</div>
+    </div>
+    <div class="main8">
+      <div class="h1">&#9820</div>
+      <div class="h2">&#9823</div>
+      <div class="h3"></div>
+      <div class="h4"></div>
+      <div class="h5"></div>
+      <div class="h6"></div>
+      <div class="h7">&#9817</div>
+      <div class="h8">&#9820</div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
